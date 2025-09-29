@@ -1,0 +1,13 @@
+| MYVC-10365 | FAILED |
+| MYVC-10383 | FAILED |
+| MYVC-11588 | FAILED |
+| MYVC-8064 | FAILED |
+| MYVC-8070 | FAILED |
+| MYVC-8071 | FAILED |
+| MYVC-8225 | FAILED |
+
+
+Vishal
+   Raj
+   Vivek
+   Vikas, Vikrant, Vijay

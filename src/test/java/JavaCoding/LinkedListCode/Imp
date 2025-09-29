@@ -1,0 +1,37 @@
+Got it 👍 — here’s an expanded list of the most frequently asked Linked List questions for SDET/Dev interviews (priority set):
+
+🔥 High-Frequency (Must Know)
+
+Reverse a Linked List (iterative + recursive).
+
+Detect a Cycle in a Linked List (Floyd’s Cycle Detection).
+
+Find the Middle of a Linked List (slow & fast pointers).
+
+Merge Two Sorted Linked Lists.
+
+Remove Nth Node from End of List (two-pointer approach).
+
+Check if a Linked List is Palindrome.
+
+Find Intersection Point of Two Linked Lists.
+
+⭐ Medium-Frequency (Common Follow-ups)
+
+Remove Duplicates from a Sorted Linked List.
+
+Remove Duplicates from an Unsorted Linked List (using HashSet).
+
+Add Two Numbers Represented by Linked Lists.
+
+Rotate a Linked List (by k places).
+
+Sort a Linked List (using Merge Sort).
+
+💡 Slightly Advanced (Asked in L3+ or Product Companies)
+
+Find the Start Node of a Cycle.
+
+Clone a Linked List with Random Pointers.
+
+Flatten a Multilevel Linked List.

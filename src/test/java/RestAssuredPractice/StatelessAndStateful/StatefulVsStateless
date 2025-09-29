@@ -1,0 +1,9 @@
+Analogy
+
+Stateful: Restaurant waiter remembers you and your order every time.
+Stateless: You bring a note with your order each time — waiter reads the note, doesn’t remember anything.
+
+So the main difference:
+
+Stateful → server remembers; request is dependent on server memory.
+Stateless → server doesn’t remember; request carries all necessary info and is independently verified.
