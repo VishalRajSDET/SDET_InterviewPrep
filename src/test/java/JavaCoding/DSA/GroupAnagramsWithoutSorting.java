@@ -12,7 +12,7 @@ public class GroupAnagramsWithoutSorting {
             int[] frequency = new int[26];// frequency array for 'a' to 'z'
             // Count character frequency
             for (char c : s.toLowerCase().toCharArray()) {
-                frequency[c - 'a']++;
+                frequency[c - 'a'] = frequency[c - 'a'] + 1;
             }
 
             StringBuilder keyBuilder=new StringBuilder();
