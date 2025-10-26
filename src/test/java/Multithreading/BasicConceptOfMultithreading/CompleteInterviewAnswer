@@ -1,0 +1,19 @@
+*"In my automation frameworks, multiple tests often run in parallel,
+which can lead to conflicts when accessing shared resources like WebDriver,
+API clients, logs, or screenshots. To handle this efficiently and safely,
+I combine ThreadLocal, synchronized blocks, and ExecutorService.
+
+For example, I use ThreadLocal to give each test thread its own WebDriver or API RequestSpecification,
+ensuring that parallel threads don’t interfere with each other.
+I also use synchronized blocks to protect shared resources like screenshot folders or log files —
+but I keep these blocks minimal, synchronizing only the critical code that writes to the shared resource to avoid performance bottlenecks.
+
+To run tests in parallel efficiently, I use ExecutorService with a fixed thread pool,
+which manages thread reuse and concurrency. For instance, I submit multiple Selenium test tasks to the pool,
+and each task uses its ThreadLocal WebDriver while synchronized blocks ensure thread-safe file writes.
+Similarly, in API automation, multiple endpoints can be tested in parallel,
+with ThreadLocal for per-thread request data and synchronized logging for shared reports.
+
+This combination ensures high parallelism, thread safety, and fast execution,
+which is essential for stable, scalable UI and API automation frameworks,
+especially when integrated with CI/CD pipelines."*

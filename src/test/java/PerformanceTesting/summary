@@ -1,0 +1,51 @@
+1️⃣ Load Testing – Normal Traffic
+
+Purpose: Check how the system performs under expected (normal) load.
+Example:
+👉 An online shopping site expects 1000 users during a regular sale.
+You simulate those 1000 users to see if everything runs smoothly.
+🧩 Goal: Make sure the site works fine under normal traffic.
+
+🔥 2️⃣ Stress Testing – Pushing to the Limit
+
+Purpose: Check how much load the system can handle before it crashes.
+Example:
+👉 The same shopping site can handle 5000 users, but you push it to 10,000–15,000 users to see when it breaks.
+🧩 Goal: Find the breaking point and see how it fails (gracefully or abruptly).
+
+⚡ 3️⃣ Spike Testing – Sudden Burst
+
+Purpose: Check how the system behaves when traffic suddenly jumps.
+Example:
+👉 News site normally has 100 users, but when a viral article drops, it suddenly gets 1000 users in a minute.
+🧩 Goal: See if the site crashes, slows down, or quickly recovers after the spike.
+
+⏱️ 4️⃣ Endurance / Soak Testing – Long Run
+
+Purpose: Check system stability over long periods of time.
+Example:
+👉 A video streaming site runs with 200 users continuously for 24 hours.
+🧩 Goal: Detect memory leaks, slowdowns, or database issues after long use.
+
+🌐 5️⃣ Scalability Testing – Growing Smoothly
+
+Purpose: Check if the system can handle more load by scaling up resources.
+Example:
+👉 Your site handles 5k users on 3 servers. You add 3 more servers and test with 10k users.
+🧩 Goal: Verify performance stays stable when the system grows.
+
+💾 6️⃣ Volume Testing – Big Data Handling
+
+Purpose: Check performance when dealing with large amounts of data.
+Example:
+👉 A cloud storage app uploads 10GB files repeatedly.
+🧩 Goal: See if large data slows the system or causes errors.
+
+🧠 One-Line Memory Trick
+Type	Think Like	Goal
+Load	“Normal day”	Handle expected users well
+Stress	“How much can I take?”	Find breaking point
+Spike	“Sudden crowd rush”	Stay stable under burst
+Endurance	“Long marathon”	Stay consistent over time
+Scalability	“Grow bigger smoothly”	Handle more load with more servers
+Volume	“Heavy data load”	Handle huge data efficiently

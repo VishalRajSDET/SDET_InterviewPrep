@@ -1,0 +1,21 @@
+Concept 1: Multithreading (Thread Creation & Execution)
+
+Real-World Meaning:
+
+Multithreading means your program can run multiple tasks at the same time instead of waiting for one to finish.
+
+Real SDET Use Case (Web + API)
+🧠 Web Automation Example:
+
+Let’s say you want to:
+
+Open Chrome for 3 different users at the same time
+Validate login functionality for each one simultaneously.
+Normally your test would run sequentially → user1, then user2, then user3.
+But with multithreading, we can make them run in parallel.
+
+Interview Tip
+
+“I’ve implemented multithreading in automation when I needed to execute tests concurrently —
+for example, running login tests for multiple users or API calls in parallel.
+I started with Java threads and later moved to ExecutorService for better management.”

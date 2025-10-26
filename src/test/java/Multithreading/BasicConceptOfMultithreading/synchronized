@@ -1,0 +1,52 @@
+When Do We Use synchronized in Automation Frameworks?
+
+Synchronized is used whenever multiple threads might access a shared resource at the same time and could cause conflicts or inconsistent results.
+
+1️⃣ Shared Files or Folders
+
+Example: Multiple Selenium tests writing screenshots to the same folder in parallel.
+Problem: Two threads try to write the same file → file corruption or overwriting.
+Solution: Synchronize only the file write operation.
+
+synchronized(lock) {
+    saveScreenshot(fileName);
+}
+
+2️⃣ Shared Logs or Reports
+
+Example: Parallel API tests writing responses to a single log file.
+Problem: Log entries get mixed up → unreadable logs.
+Solution: Synchronize the logging method.
+
+synchronized(logLock) {
+    writeLog(threadName, endpoint, status);
+}
+
+3️⃣ Shared Databases or Test Data Updates
+
+Example: Multiple threads inserting results into the same DB table or updating a shared JSON/Excel data file.
+
+Problem: Race conditions → duplicate rows or overwritten data.
+Solution: Synchronize the database write or file update code.
+
+4️⃣ Shared Objects That Are Not Thread-Safe
+
+Example: A non-thread-safe collection (like ArrayList) shared between threads.
+Problem: Concurrent modifications → ConcurrentModificationException.
+Solution: Synchronize access to the collection, or better: use Concurrent collections.
+
+synchronized(listLock) {
+    sharedList.add(data);
+}
+
+🔹 Key Guidelines in SDET Frameworks
+
+Only synchronize truly shared resources. Don’t block operations that are already per-thread (like WebDriver or API client in ThreadLocal).
+Keep the synchronized block small — only the critical code that accesses the shared resource.
+Use separate locks for different resources to reduce blocking and improve parallel execution speed.
+
+🔹 Interview Tip
+
+“I use synchronized whenever multiple threads access shared resources like files, logs, reports, or non-thread-safe objects.
+For example, in my Selenium framework, I synchronize only the screenshot file write, and in API tests, I synchronize the shared log file writes.
+This ensures thread safety while keeping parallel execution efficient.”

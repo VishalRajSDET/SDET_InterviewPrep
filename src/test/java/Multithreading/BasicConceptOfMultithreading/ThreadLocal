@@ -1,0 +1,31 @@
+*"In my automation framework, I handle parallel execution using Java’s ThreadLocal to ensure thread safety.
+ For Selenium UI tests, I store WebDriver instances in ThreadLocal, so each test thread gets its own browser.
+ This prevents conflicts where one test might close or interfere with another thread’s browser session.
+
+ public class DriverManager {
+     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+     public static WebDriver getDriver() { return driver.get(); }
+     public static void setDriver(WebDriver driverInstance) { driver.set(driverInstance); }
+     public static void unload() { driver.remove(); }
+ }
+
+Similarly, in API testing with RestAssured, I use ThreadLocal for RequestSpecification objects,
+ensuring that each thread maintains its own headers, tokens, and request data. This prevents shared state issues when tests run concurrently.
+
+By using ThreadLocal, I ensure that parallel tests run safely, reliably, and efficiently.
+I also make sure to clean up ThreadLocal instances after tests to avoid memory leaks.
+This approach has helped me run stable parallel tests both locally and in CI/CD pipelines like Jenkins,
+and it scales well with TestNG or Cucumber parallel execution."*
+
+💡 Tips to deliver it naturally:
+
+Speak slowly and clearly — highlight UI + API + ThreadLocal keywords.
+
+If asked for an example, you can mention:
+
+Selenium: 2-3 browsers in parallel using ThreadLocal WebDriver
+
+API: Parallel login or profile tests using ThreadLocal RequestSpecification
+
+Emphasize thread safety, stability, and CI/CD readiness — interviewers love this.
