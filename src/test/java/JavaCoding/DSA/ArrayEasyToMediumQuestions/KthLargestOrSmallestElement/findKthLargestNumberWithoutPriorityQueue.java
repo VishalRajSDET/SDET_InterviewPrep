@@ -10,12 +10,12 @@ public class findKthLargestNumberWithoutPriorityQueue {
 
         TreeSet<Integer> set = new TreeSet<>();
         // Case 1: If kth unique element exists
+        for (int i : num) {
+            set.add(i);
+        }
         if (set.size() >= k) {
-            for (int i : num) {
-                set.add(i);
-            }
             ArrayList<Integer> list = new ArrayList<>(set);
-            // return list.get(list.size() - k); // kth largest unique
+            //return list.get(list.size() - k); // kth largest unique
             return list.get(k - 1);              // kth smallest unique
         } else {
             Arrays.sort(num);
