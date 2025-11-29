@@ -1,0 +1,23 @@
+[Security: Session Wins]
+================================================================================================================================================
+The Problem with Tokens:--> Once a server issues a token, it cannot easily take it back.
+If a hacker steals a user's token, they can use it until it expires (often 15-60 minutes).
+You cannot "log them out" remotely without complex workarounds (like blacklists).
+
+The Session Advantage:--> Because the server checks the database on every request, you can ban a user or revoke their access instantly.
+================================================================================================================================================
+
+[Scalability: Token Wins]
+================================================================================================================================================
+The Problem with Sessions:--> If you have 1,000,000 active users, your server needs 1,000,000 open records in its memory (RAM) or Redis database.
+this gets expensive.
+
+The Token Advantage:--> The server stores nothing. It just checks the mathematical signature of the token. You can have 100 users or 100 million;
+the server load remains roughly the same.
+================================================================================================================================================
+
+[Performance: Token Wins (Mostly)]
+Session: Requires a database lookup for every single API call (Disk I/O).
+
+Token: Requires a CPU calculation to verify the signature. CPU is generally faster and cheaper than Disk I/O.
+================================================================================================================================================

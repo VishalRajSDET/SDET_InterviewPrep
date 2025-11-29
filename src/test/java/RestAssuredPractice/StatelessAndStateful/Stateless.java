@@ -31,3 +31,14 @@ public class Stateless {
     .statusCode(200);
 
 }
+
+/**
+ * Think of Token-based auth like a Hotel Key Card.
+ *
+ * How it works:--> The front desk gives you a plastic card. The lock on your room door is "stateless"—it doesn't talk to the front desk.
+ * It just checks: "Does this card have the correct magnetic code for Room 202?"
+ *
+ * The Problem:--> If you lose your key card and a thief picks it up, the thief can open your room.
+ * The front desk can't magically stop the card from working because the door lock (the server) doesn't check with the front desk (the database) every time.
+ * The card is valid until it expires (checkout time).
+ */
