@@ -1,0 +1,43 @@
+[ The Scratchpad (Session Storage) ]
+What it is: A distinct notepad you use for one specific task/project.
+
+Behavior:=> It has more space (5MB). You write temporary calculations here.
+The key rule:=> As soon as you finish that specific task (Close the Tab), you rip off the page and shred it. It is gone.
+Isolation:=> If you start a second similar task on the side (Open a New Tab), you grab a new scratchpad. The notes don't mix.
+
+================================================================================================================================================
+[[ Deep Dive: Session Storage (The Scratchpad) ]]
+Definition: Storage that is available only for the duration of the page session (as long as the browser tab is open).
+
+Lifespan: Dies when the Tab is closed.
+
+Scope: Specific to that one Tab.
+
+Real-time Test: Open google.com in Tab A. Write "Hello" in Session Storage. Open google.com in Tab B. Tab B cannot see "Hello".
+Real-Time Example: A Multi-Step Banking Form Imagine you are applying for a loan online. It has 4 steps.
+Page 1: You enter your Name/Address. -> Saved to Session Storage.
+Page 2: You enter your Income. -> Browser reads Name from Storage to display at the top.
+Page 3: You mistakenly close the tab.
+Result: When you reopen the browser, the data is gone. This is good for security!
+You don't want the next person on that computer to see your half-filled loan application.
+================================================================================================================================================
+[ The Whiteboard (Local Storage) ]
+What it is: A big whiteboard bolted to your wall.
+
+Behavior:=> It has lots of space (5-10MB).
+The key rule:=> Anything you write here stays here. If you go home for the weekend (Restart Computer) and come back, the writing is still there.
+Persistence:=> It only disappears if you deliberately grab the eraser and wipe it (Clear Cache/Code).
+
+
+[[ Deep Dive: Local Storage (The Whiteboard) ]]
+Definition: Storage that persists even after the browser is closed and reopened. It has no expiration date.
+
+Lifespan: Forever (until manually deleted by user or code).
+
+Scope: Shared across all tabs/windows of the same website.
+Real-time Test: Open youtube.com in Tab A. Set volume to 50%. Open youtube.com in Tab B. Tab B sees the volume is 50%.
+Real-Time Example: The "Draft" or "Shopping Cart" (Non-Logged In)
+Scenario: You are writing a long comment on a blog, but you haven't logged in yet.
+Action: You accidentally close the browser.
+Result: When you open the site again, your text is still there!
+Why: The developer saved your text in Local Storage. It survived the restart.

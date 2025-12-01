@@ -1,0 +1,52 @@
+=========================================================================================================================
+Cookies: Selenium has built-in commands:
+driver.manage().getCookies();
+
+[ The Technical Definition ]
+"A Cookie is a small text file (max 4KB) stored on the client-side (the user's browser).
+It is sent by the server to the browser, and then the browser sends it back to the server with every subsequent request.
+Its primary purpose is to help the server remember stateful information in a stateless HTTP environment."
+=========================================================================================================================
+
+
+[The Real-Time Example: The "Remember Me" Checkbox]
+Scenario: You log into a website (like Gmail or Facebook) and check the box that says "Remember Me." You close the browser,
+restart your computer, and open the site again. You are still logged in.
+
+[How it works technically (The Interview Explanation):]
+
+=>[Server Response (Set-Cookie):] When you first log in successfully with "Remember Me" checked, the server sends a response header.
+It doesn't just send the HTML; it includes an instruction: Set-Cookie: auth_token=XYZ_ENCRYPTED_STRING; Expires=Wed, 30 Nov 2026
+
+=>[Browser Storage:] Your browser reads this header. It sees the Expires date is in the future. It saves this text file to your hard drive (not just RAM).
+
+=>[Next Visit (The Request):] Three days later, you type facebook.com. Your browser checks its folder: "Do I have a cookie for facebook.com?"
+Yes: It finds the cookie.
+=>[Action:] It automatically adds a header to your request: Cookie: auth_token=XYZ_ENCRYPTED_STRING
+
+[Server Verification:] The server receives the request. It reads the cookie, decrypts the token, recognizes you are John Doe,
+and logs you in automatically without asking for a password.
+=========================================================================================================================
+[Important Security Flags (Critical for Automation/Testing)]
+If you are interviewing for a QA/Automation role, you must mention these flags:
+
+=>HttpOnly: If a cookie has this flag, it cannot be accessed by JavaScript (e.g., document.cookie).
+This prevents hackers from stealing cookies using scripts (XSS attacks).
+
+=>Note: As an automation tester using Selenium, you can still access these, but standard JavaScript on the page cannot.
+
+=>Secure: This cookie will only be sent if the connection is encrypted (HTTPS). It won't be sent over plain HTTP.
+
+
+"A Stateless Cookie works like a Name Tag. The data (like 'Language=English') is stored directly inside the cookie on the browser.
+The server reads the cookie to know what to do, but it doesn't store any record of the user in its own memory.
+This saves server resources but is less secure than a Session."
+
+============================================================================================================================
+1. Stateful Cookies (Session-Based): In this approach, the cookie only holds a Reference ID.
+The actual data (State) is stored securely on the Server. This is like a 'Valet Ticket'—the ticket is just a claim check,
+but the car is kept by the valet. This is more secure but consumes server memory.
+
+2. Stateless Cookies (Self-Contained): In this approach, the cookie holds the Actual Data itself (often encrypted).
+The server does not store any record of the user in its memory. This is like a 'Name Tag'—the user carries their own information.
+This saves server memory (scalable) but requires careful encryption to prevent tampering."
