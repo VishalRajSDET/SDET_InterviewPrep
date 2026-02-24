@@ -35,7 +35,7 @@ public class MaximumVowelsInSubstringOfSizeK {
     }
 
     public static void main(String[] args) {
-        String s = "iiidef";
+        String s = "iiqideaef";
         int k = 3;
         System.out.println(maxVowelsSubstring(s, k));
     }

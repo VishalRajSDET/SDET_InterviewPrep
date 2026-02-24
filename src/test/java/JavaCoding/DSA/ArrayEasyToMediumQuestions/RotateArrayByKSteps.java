@@ -38,7 +38,7 @@ public class RotateArrayByKSteps {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
-        int k = 2;
+        int k = 5;
         rightRotate(arr, k);
        // leftRotate(arr, k);
         System.out.print("Rotated Array: "+ Arrays.toString(arr));

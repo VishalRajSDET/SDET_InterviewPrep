@@ -6,14 +6,14 @@ import java.util.PriorityQueue;
 
 public class findKthLargestNumber {
 
-    public static int getKthLargestNumber(int[] num, int k) {
+
+    public static int getKthLargestUniqueNumber(int[] num, int k) {
         HashSet<Integer> set = new HashSet<>();
         for (int i : num) {
             set.add(i);
         }
-        ArrayList<Integer> list = new ArrayList<>(set);
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
-        for (int i : list) {
+        for (int i : set) {
             priorityQueue.add(i);
             if (priorityQueue.size() > k) {
                 priorityQueue.poll();
@@ -24,8 +24,8 @@ public class findKthLargestNumber {
 
     public static void main(String[] args) {
         int k = 2;
-        int[] arr = {3,6, 2, 5, 3, 4, 4, 5, 4};
-        int result = getKthLargestNumber(arr, k);
+        int[] arr = {3, 6, 2, 6, 5, 3, 4, 4, 5, 6, 4};
+        int result = getKthLargestUniqueNumber(arr, k);
         System.out.println("The " + k + "th largest unique element is: " + result);
     }
 }
