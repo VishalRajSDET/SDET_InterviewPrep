@@ -1,0 +1,24 @@
+=========================================================================================================================
+[ The Technical Definition (For an Interview) ]
+"A Session is a server-side mechanism used to store user information temporarily.
+Since the web (HTTP) is 'stateless' and forgets the user after every click,
+the Session allows the server to recognize the user across multiple page requests using a unique Session ID."
+
+
+[Key Keywords to Mention]
+If you are explaining this in a technical context, make sure to hit these points:
+
+=>Server-Side: It lives on the server, not the browser.
+=>Statelessness: It solves the problem of HTTP not remembering users.
+=>Temporary: It is not permanent data.
+=>Session ID: The unique key used to match the user to their session.
+
+The "Phone Call" Analogy (The easiest way to visualize it)
+You can compare a Session to a Phone Call:
+=>Dialing (Login): You call customer service. The connection is established. This is the start of the session.
+=>Talking (Activity): As long as you keep talking, the line stays open. You share information back and forth.
+=>Silence (Inactivity): If you stop talking for 30 minutes, the operator hangs up to save resources. The session expires.
+=>Hanging Up (Logout): You choose to end the call. The connection is severed immediately.
+=>The Transcript (The Record): If the operator wrote down your complaint in their database,
+that note stays there even after you hang up. That is the Record, not the Session.
+=========================================================================================================================

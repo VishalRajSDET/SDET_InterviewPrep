@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 
 public class longestSubString {
     public static void main(String[] args) {
-  String str = " ";
+  String str = "ascadafavaba";
         String longestSubString = "";
         int longestSubStringLength = 0;
         HashMap<Character, Integer> map = new HashMap<>();
