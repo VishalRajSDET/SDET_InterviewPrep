@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ff1fd5a7-d70b-4131-b5dd-2393fb515b0d" name="Changes" comment="added new change" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;VishalRajSDET&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/VishalRajSDET/SDET_InterviewPrep.git&quot;,
+    &quot;accountId&quot;: &quot;00f05c92-066f-4047-b904-bd33c644e564&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="33TCd0vGTpUtFMb5TavHwhdAFFw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BestTimeToBuyAndSellStockProblem.executor": "Run",
+    "Application.CheckSortedArray.executor": "Run",
+    "Application.FindMissingNumbers.executor": "Run",
+    "Application.FirstLastOccurrenceBinarySearch.executor": "Run",
+    "Application.FirstLastOccurrenceLinearSearch.executor": "Debug",
+    "Application.FrequencyCounterWithoutHashmap.executor": "Run",
+    "Application.GroupAnagramsWithoutSorting.executor": "Run",
+    "Application.LongestPalindromicSubstring.executor": "Run",
+    "Application.LongestSubString.executor": "Run",
+    "Application.LongestSubstringLength.executor": "Run",
+    "Application.MaximumSubarray.executor": "Run",
+    "Application.MaximumSubarraySum.executor": "Run",
+    "Application.MergeTwoArray.executor": "Run",
+    "Application.MoveZeroLeftOrRight.executor": "Debug",
+    "Application.MultiUserLoginTest.executor": "Run",
+    "Application.NonRepeatNumber.executor": "Run",
+    "Application.PermutationOfString.executor": "Run",
+    "Application.RemoveDuplicateElementCode.executor": "Run",
+    "Application.RemoveDuplicateFromArray.executor": "Run",
+    "Application.ReverseArray.executor": "Debug",
+    "Application.ReverseStringIterative.executor": "Run",
+    "Application.RotateArrayByKSteps.executor": "Debug",
+    "Application.RotateNegativeToLeft.executor": "Run",
+    "Application.SecondLargestSmallest.executor": "Run",
+    "Application.SingleNonRepeatingElemnet.executor": "Debug",
+    "Application.SortArrayUsingMergeSort.executor": "Run",
+    "Application.SortStringArrayCode.executor": "Run",
+    "Application.StringCompression.executor": "Debug",
+    "Application.Test.executor": "Run",
+    "Application.TwoSumAllPairs.executor": "Debug",
+    "Application.TwoSumArryayCode.executor": "Run",
+    "Application.findKthLargestNumberWithoutPriorityQueue.executor": "Debug",
+    "Application.insertAndDelete.executor": "Run",
+    "Application.longestSubString.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.MaximumSubarray">
+    <configuration name="MaximumSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaCoding.DSA.ArrayEasyToMediumQuestions.MaximumSubarray" />
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaCoding.DSA.ArrayEasyToMediumQuestions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaximumSubarraySum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaCoding.DSA.ArrayEasyToMediumQuestions.MaximumSubarraySum" />
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaCoding.DSA.ArrayEasyToMediumQuestions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoveZeroLeftOrRight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaCoding.DSA.ArrayEasyToMediumQuestions.MoveZeroLeftOrRight" />
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaCoding.DSA.ArrayEasyToMediumQuestions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaCoding.DSA.ArrayEasyToMediumQuestions.ReverseArray" />
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaCoding.DSA.ArrayEasyToMediumQuestions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RotateArrayByKSteps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaCoding.DSA.ArrayEasyToMediumQuestions.RotateArrayByKSteps" />
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaCoding.DSA.ArrayEasyToMediumQuestions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SDET_InterviewPrep" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SDET_InterviewPrep" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RotateArrayByKSteps" />
+        <item itemvalue="Application.ReverseArray" />
+        <item itemvalue="Application.MoveZeroLeftOrRight" />
+        <item itemvalue="Application.MaximumSubarray" />
+        <item itemvalue="Application.MaximumSubarraySum" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff1fd5a7-d70b-4131-b5dd-2393fb515b0d" name="Changes" comment="" />
+      <created>1759331758651</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759331758651</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added new change">
+      <option name="closed" value="true" />
+      <created>1760633986004</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760633986004</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added new change">
+      <option name="closed" value="true" />
+      <created>1760892118596</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760892118596</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added new change">
+      <option name="closed" value="true" />
+      <created>1761473964146</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761473964146</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added new change in group anagram code">
+      <option name="closed" value="true" />
+      <created>1761485364204</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761485364205</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added new change in findKthLargestElement">
+      <option name="closed" value="true" />
+      <created>1761486086528</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761486086528</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added new change">
+      <option name="closed" value="true" />
+      <created>1764434657858</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764434657858</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added new change">
+      <option name="closed" value="true" />
+      <created>1764556559363</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764556559363</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added new change in group anagram code" />
+    <MESSAGE value="added new change in findKthLargestElement" />
+    <MESSAGE value="added new change" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new change" />
+  </component>
+</project>

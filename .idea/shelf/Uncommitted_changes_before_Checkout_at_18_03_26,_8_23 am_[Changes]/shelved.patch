@@ -1,0 +1,21 @@
+Index: src/test/java/JavaCoding/DSA/ArrayEasyToMediumQuestions/MaximumSubarray.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package JavaCoding.DSA.ArrayEasyToMediumQuestions;\n\nimport java.util.Arrays;\n\npublic class MaximumSubarray {\n\n    public static void maxSubArray(int[] arr) {\n        int maxSoFar = arr[0]; //keeps the largest sum seen so far\n        int curMax = arr[0]; //keeps the sum of the current subarray being considered.\n        int start = 0; //start index of the best subarray found so far.\n        int end = 0; //end index of the best subarray found so far.\n        int tempStart = 0; //temporary start index of the current subarray(used to track when we start a new subarray).\n\n        for (int i = 1; i < arr.length; i++) {\n            if (arr[i] > curMax + arr[i]) {\n                curMax = arr[i];\n                tempStart = i; // start new subarray\n            } else {\n                curMax = curMax + arr[i];\n            }\n            if (curMax > maxSoFar) {\n                maxSoFar = curMax;\n                start = tempStart;\n                end = i;\n            }\n        }\n        System.out.println(\"Maximum Sub Array sum:\" + maxSoFar);\n        System.out.println(\"Maximum Sub Array :\" + Arrays.toString((Arrays.copyOfRange(arr, start, end + 1))));\n        /**\n         * Arrays.copyOfRange(arr, start, end + 1) → extracts the subarray from start to end inclusive.\n         * Prints the sum and the subarray itself.\n         */\n    }\n\n    public static void main(String[] args) {\n        int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};\n        maxSubArray(arr);\n/**\n * Time Complexity: O(n)\n * Space Complexity: O(1) (ignoring the subarray copy)\n */\n    }\n}\n
+===================================================================
+diff --git a/src/test/java/JavaCoding/DSA/ArrayEasyToMediumQuestions/MaximumSubarray.java b/src/test/java/JavaCoding/DSA/ArrayEasyToMediumQuestions/MaximumSubarray.java
+--- a/src/test/java/JavaCoding/DSA/ArrayEasyToMediumQuestions/MaximumSubarray.java	(revision bfb1e28192b4514300324b5623b9932496817476)
++++ b/src/test/java/JavaCoding/DSA/ArrayEasyToMediumQuestions/MaximumSubarray.java	(date 1773799555068)
+@@ -25,7 +25,12 @@
+             }
+         }
+         System.out.println("Maximum Sub Array sum:" + maxSoFar);
++        System.out.println("start " + start + " end " +end);
+         System.out.println("Maximum Sub Array :" + Arrays.toString((Arrays.copyOfRange(arr, start, end + 1))));
++        while(start<=end){
++            System.out.print(" "+start +" ->"+arr[start]);
++            start++;
++        }
+         /**
+          * Arrays.copyOfRange(arr, start, end + 1) → extracts the subarray from start to end inclusive.
+          * Prints the sum and the subarray itself.
