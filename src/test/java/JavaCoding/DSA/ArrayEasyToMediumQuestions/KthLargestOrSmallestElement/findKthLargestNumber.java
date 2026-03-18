@@ -6,7 +6,12 @@ import java.util.PriorityQueue;
 
 public class findKthLargestNumber {
 
-
+    /**
+     * Important Concept
+     * PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+     * This is a Min Heap. That means: The smallest element always stays at the top (index 0) .Internally it rearranges itself after every insertion .It does NOT store elements in insertion order.
+     * Heap maintains partial order, not full sorting.
+     */
     public static int getKthLargestUniqueNumber(int[] num, int k) {
         HashSet<Integer> set = new HashSet<>();
         for (int i : num) {
